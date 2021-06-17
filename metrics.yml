@@ -133,8 +133,9 @@ spec:
         - --requestheader-allowed-names=aggregator
         - --kubelet-insecure-tls
         - --secure-port=4443
+        - --kubelet-use-node-status-port  
         - --kubelet-preferred-address-types=InternalIP,Hostname,InternalDNS,ExternalDNS,ExternalIP
-        - --metric-resolution=5s
+        - --metric-resolution=10s
         image: gcr.io/k8s-staging-metrics-server/metrics-server:master 
         imagePullPolicy: IfNotPresent
         livenessProbe:
