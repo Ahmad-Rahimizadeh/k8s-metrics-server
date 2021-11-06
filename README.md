@@ -5,4 +5,7 @@ Metrics Server collects resource metrics from Kubelets and exposes them in Kuber
 
 Metrics Server is not meant for non-autoscaling purposes. For example, don't use it to forward metrics to monitoring solutions, or as a source of monitoring solution metrics.
 
-to install metrics server on your k8s cluster just clone the repository and run kubectl apply -f metrics.yml
+to install metrics server on your k8s cluster just clone the repository and run below command:
+```
+kubectl apply -f metrics.yml
+```
